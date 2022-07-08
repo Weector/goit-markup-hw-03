@@ -1,0 +1,198 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+  --fourth-background-color: #ffffff;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+}
+
+/* body */
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/*  logo and background of header & footer */
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-black {
+  color: var(--black-color);
+}
+
+.logo-white {
+  color: var(--white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.header-bg {
+  background-color: var(--fourth-background-color);
+}
+
+/* site-nav */
+
+.site-nav a {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav a.current {
+  color: var(--accent-color);
+}
+
+.auth-nav a {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: var(--accent-color);
+}
+
+/* button */
+
+.section .button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.section .filter {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.section .filter:focus,
+.filter:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* section */
+
+.hero-bg {
+  background-color: var(--third-background-color);
+}
+
+.section .hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section .title-hidden {
+  visibility: hidden;
+}
+
+.section .benefit {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.section .benefit-reason {
+  line-height: 1.71;
+}
+.section .section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-bg {
+  background-color: var(--secondary-background-color);
+}
+.section .employee-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.section .employee-position {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* portfolio section */
+
+.section .image-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section .affiliation {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* footer */
+
+.footer-bg {
+  background-color: var(--third-background-color);
+}
+
+.footer .address {
+  color: var(--white-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer .address a {
+  color: var(--footer-contact-color);
+  text-decoration: none;
+}
