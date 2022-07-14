@@ -4,22 +4,34 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --black-color: #000000;
-  --background-color: #e5e5e5;
   --secondary-background-color: #f5f4fa;
   --third-background-color: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
-/* body */
+/* Body */
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
+/* List style */
+
+.list {
+  list-style: none;
+}
+
+/* No gap */
+
+.no-gap {
+  display: block;
+}
+
+/* Reset margin */
 
 h1,
 h2,
@@ -30,13 +42,8 @@ p {
   margin-bottom: 0;
 }
 
-/* list style */
+/* Container */
 
-.list {
-  list-style: none;
-}
-
-/* container */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -46,24 +53,18 @@ p {
 }
 
 /* Section padding */
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* No gap */
-
-.no-gap {
-  display: block;
-}
-
-/*  logo and background of header & footer */
+/*  Logo header & footer */
 
 .logo {
   margin-right: 93px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -83,7 +84,7 @@ p {
   min-height: 80px;
 }
 
-/* site navigation */
+/* Site navigation */
 
 .main-nav {
   display: flex;
@@ -137,43 +138,46 @@ p {
 .auth-nav .auth-link:focus {
   color: var(--accent-color);
 }
+
 .auth-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
-/* Filter */
+/* Filter button*/
 
-.filter-btn {
+.filter-box {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
   padding-left: 0;
 }
 
-.filter-btn .item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter {
+.filter-btn {
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
-  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  border: transparent;
-  border-radius: 4px;
 }
 
-.filter:focus,
-.filter:hover {
+.filter-box .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-btn:focus,
+.filter-btn:hover,
+.active-btn {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
 
-/* button */
+/* Button */
 
 .btn {
   display: flex;
@@ -186,7 +190,6 @@ p {
   color: var(--white-color);
   cursor: pointer;
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -194,7 +197,7 @@ p {
   border-radius: 4px;
 }
 
-/* section */
+/* Section */
 
 .hero-bg {
   background-color: var(--third-background-color);
@@ -234,11 +237,11 @@ p {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.benefit-reason {
+.benefit-title {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.71;
@@ -248,7 +251,6 @@ p {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -284,6 +286,7 @@ p {
   line-height: 1.19;
   text-align: center;
 }
+
 .section .employee-position {
   margin-top: 10px;
   padding-bottom: 30px;
@@ -292,7 +295,7 @@ p {
   text-align: center;
 }
 
-/* portfolio section */
+/* Portfolio section */
 
 .project {
   display: flex;
@@ -313,10 +316,9 @@ p {
   margin-bottom: 0;
 }
 .project .image-title {
-  margin-top: 20px;
+  padding-top: 20px;
   padding-left: 24px;
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.06em;
 }
@@ -333,7 +335,7 @@ p {
   border-top: none;
 }
 
-/* footer */
+/* Footer */
 
 .footer-bg {
   background-color: var(--third-background-color);
@@ -342,8 +344,9 @@ p {
 .footer .logo {
   display: inline-block;
   margin-right: 0;
+  margin-bottom: 20px;
   padding-top: 60px;
-  padding-bottom: 20px;
+
   font-style: normal;
 }
 
@@ -367,4 +370,8 @@ p {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.footer-link:hover,
+.foter-link:focus {
+  color: var(--accent-color);
 }
