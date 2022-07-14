@@ -277,9 +277,7 @@ p {
 }
 
 .section .employee-name {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
+  margin-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -287,8 +285,7 @@ p {
   text-align: center;
 }
 .section .employee-position {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 10px;
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
@@ -316,7 +313,7 @@ p {
   margin-bottom: 0;
 }
 .project .image-title {
-  padding-top: 20px;
+  margin-top: 20px;
   padding-left: 24px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -344,30 +341,30 @@ p {
 
 .footer .logo {
   display: inline-block;
+  margin-right: 0;
   padding-top: 60px;
   padding-bottom: 20px;
   font-style: normal;
 }
-.address {
-  padding-left: 0;
+
+.footer .address {
   padding-bottom: 60px;
+  padding-left: 0;
 }
-.footer .footer-adress {
+
+.footer .footer-address {
   color: var(--white-color);
   font-style: normal;
   line-height: 1.71;
   text-decoration: none;
 }
 
-.address .footer-link {
+.footer .footer-link {
+  display: block;
+  margin-top: 9px;
   color: var(--footer-contact-color);
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 9px;
-}
-
-.footer .box {
-  display: flex;
 }
