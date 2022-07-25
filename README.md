@@ -9,7 +9,7 @@ home work #3
               для вашего бизнеса
            </h1>
 
-2)чи можна оформити розмітку портфоліо тегом "gap: 30px"
+2)чи можна оформити розмітку портфоліо властивістю "gap: 30px"
 
 /_ .project { display: flex; flex-wrap: wrap; gap: 30px; padding-bottom: 94px; padding-right: 0;
 padding-left: 0; } _/
