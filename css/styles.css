@@ -165,7 +165,7 @@ p {
 /* Section */
 
 .hero {
-  padding: 200px 0;
+  padding: 200px 0px;
   background-color: var(--third-background-color);
   text-align: center;
 }
@@ -374,7 +374,7 @@ p {
 .footer-address {
   color: var(--white-color);
   font-style: normal;
-  line-height: 1.71;
+  line-height: 1.5;
   text-decoration: none;
 }
 
@@ -382,7 +382,7 @@ p {
   color: var(--footer-contact-color);
   text-decoration: none;
   font-style: normal;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 .footer-link:hover,
